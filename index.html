@@ -1,0 +1,114 @@
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Login
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            background-image: url('https://telaviva.com.br/wp-content/uploads/2021/08/netflix-.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+  </style>
+ </head>
+ <body class="bg-black bg-opacity-75 text-white">
+  <div class="flex flex-col min-h-screen">
+   <header class="flex justify-between items-center p-4">
+    <img alt="Netflix logo" class="h-12" src="https://placehold.co/100x50"/>
+   </header>
+   <main class="flex-grow flex items-center justify-center">
+    <div class="bg-black bg-opacity-75 p-8 rounded-md max-w-md w-full">
+     <h1 class="text-3xl font-bold mb-6">
+      Entrar
+     </h1>
+     <form>
+      <div class="mb-4">
+       <input class="w-full p-3 bg-gray-700 rounded text-white" placeholder="Email ou número de celular" type="text"/>
+      </div>
+      <div class="mb-4">
+       <input class="w-full p-3 bg-gray-700 rounded text-white" placeholder="Senha" type="password"/>
+      </div>
+      <button class="w-full bg-red-600 py-3 rounded text-white font-bold" type="submit">
+       Entrar
+      </button>
+     </form>
+     <div class="flex items-center justify-between mt-4">
+      <hr class="w-full border-gray-600"/>
+      <span class="px-2 text-gray-400">
+       OU
+      </span>
+      <hr class="w-full border-gray-600"/>
+     </div>
+     <button class="w-full bg-gray-600 py-3 rounded text-white font-bold mt-4">
+      Usar um código de acesso
+     </button>
+     <div class="flex justify-between items-center mt-4">
+      <a class="text-gray-400" href="#">
+       Esqueceu a senha?
+      </a>
+     </div>
+     <div class="flex items-center mt-4">
+      <input class="mr-2" id="remember" type="checkbox"/>
+      <label class="text-gray-400" for="remember">
+       Lembre-se de mim
+      </label>
+     </div>
+     <div class="mt-4">
+      <span class="text-gray-400">
+       Primeira vez aqui?
+       <a class="text-white" href="#">
+        Assine agora.
+       </a>
+      </span>
+     </div>
+     <div class="mt-4 text-gray-400 text-sm">
+      Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+      <a class="text-blue-500" href="#">
+       Saiba mais.
+      </a>
+     </div>
+    </div>
+   </main>
+   <footer class="bg-black bg-opacity-75 p-4 text-gray-400 text-sm">
+    <div class="text-center mb-4">
+     Dúvidas? Ligue para 0800 591 2876 (ligação grátis)
+    </div>
+    <div class="flex justify-center space-x-4 mb-4">
+     <a class="hover:underline" href="#">
+      Perguntas frequentes
+     </a>
+     <a class="hover:underline" href="#">
+      Central de Ajuda
+     </a>
+     <a class="hover:underline" href="#">
+      Preferências de cookies
+     </a>
+     <a class="hover:underline" href="#">
+      Informações corporativas
+     </a>
+     <a class="hover:underline" href="#">
+      Termos de Uso
+     </a>
+     <a class="hover:underline" href="#">
+      Privacidade
+     </a>
+    </div>
+    <div class="text-center">
+     <select class="bg-black bg-opacity-75 text-gray-400 border border-gray-600 p-2 rounded">
+      <option>
+       Português
+      </option>
+      <option>
+       English
+      </option>
+     </select>
+    </div>
+   </footer>
+  </div>
+ </body>
+</html>

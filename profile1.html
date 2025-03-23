@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      Netflix Clone
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+      .slideshow-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slideshow-images {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+
+      .slideshow-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .slideshow-image.active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="flex items-center justify-between p-4 bg-black">
+      <div class="flex items-center space-x-4">
+        <img alt="Netflix Logo" class="h-10" src="https://placehold.co/100x40"/>
+        <nav class="hidden md:flex space-x-4">
+          <a class="text-white" href="#">
+            Início
+          </a>
+          <a class="text-white" href="#">
+            Séries
+          </a>
+          <a class="text-white" href="#">
+            Filmes
+          </a>
+          <a class="text-white" href="#">
+            Bombando
+          </a>
+          <a class="text-white" href="#">
+            Minha lista
+          </a>
+          <a class="text-white" href="#">
+            Navegar por idiomas
+          </a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a class="text-white" href="#">
+          Infantil
+        </a>
+        <i class="fas fa-search text-white">
+        </i>
+      </div>
+    </header>
+    <main>
+      <section class="relative">
+        <div class="slideshow-container">
+          <ul class="slideshow-images">
+            <li class="slideshow-image active">
+              <img alt="Imagem 1" class="w-full h-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKr-_JPE_F4KV7glmSohHnRezTcfjce45sw&s"/>
+            </li>
+            <li class="slideshow-image">
+              <img alt="Imagem 2" class="w-full h-auto" src="https://marketplace.canva.com/EAGA04ZmkgA/2/0/1200w/canva-cartaz-de-filme-com-estilo-escuro-e-s%C3%A9rio%2C-em-preto-e-branco-tg9El70tFdI.jpg"/>
+            </li>
+            <li class="slideshow-image">
+              <img alt="Imagem 3" class="w-full h-auto" src="https://super.abril.com.br/wp-content/uploads/2018/07/56cdfe5182bee10ed503771bposters_site1.jpeg?quality=70&w=720&crop=1"/>
+            </li>
+            <li class="slideshow-image">
+              <img alt="Imagem 4" class="w-full h-auto" src="https://placehold.co/1920x1080"/>
+            </li>
+            <li class="slideshow-image">
+              <img alt="Imagem 5" class="w-full h-auto" src="https://placehold.co/1920x1080"/>
+            </li>
+          </ul>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent">
+        </div>
+      </section>
+      <div class="absolute bottom-0 p-8">
+        <div class="flex items-center space-x-2">
+          <img alt="Nickelodeon Logo" class="h-10" src="https://placehold.co/100x40"/>
+          <h1 class="text-4xl font-bold">
+            O SEGREDO DOS ANIMAIS
+          </h1>
+        </div>
+        <div class="mt-4">
+          <span class="bg-red-600 text-white px-2 py-1 text-xs font-bold">
+            TOP 10
+          </span>
+          <h2 class="text-2xl font-bold mt-2">
+            Top 4 em filmes hoje
+          </h2>
+          <p class="mt-2 max-w-lg">
+            Eleito líder da fazenda, um boi adolescente livre, leve e solto precisa amadurecer rápido para proteger os outros animais contra uma matilha de coiotes famintos.
+          </p>
+          <div class="mt-4 flex space-x-4">
+            <button class="bg-white text-black px-4 py-2 rounded flex items-center space-x-2">
+              <i class="fas fa-play">
+              </i>
+              <span>
+                Assistir
+              </span>
+            </button>
+            <button class="bg-gray-700 text-white px-4 py-2 rounded flex items-center space-x-2">
+              <i class="fas fa-info-circle">
+              </i>
+              <span>
+                Mais informações
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-8">
+      <h3 class="text-xl font-bold mb-4">
+        Novidades na Netflix
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="relative">
+          <img alt="Rick and Morty" class="w-full h-auto" src="https://placehold.co/200x300"/>
+          <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold">
+            TOP 10
+          </span>
+        </div>
+        <div class="relative">
+          <img alt="The Electric State" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Adolescência" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Tornado" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Cuspirei em seus túmulos" class="w-full h-auto" src="https://placehold.co/200x300"/>
+          <span class="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 text-xs font-bold">
+            TOP 10
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="p-8">
+      <h3 class="text-xl font-bold mb-4">
+        Continuar assistindo como Atualização
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="relative">
+          <img alt="Show 1" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Show 2" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Show 3" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Show 4" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Show 5" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+        <div class="relative">
+          <img alt="Show 6" class="w-full h-auto" src="https://placehold.co/200x300"/>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const slideshowImages = document.querySelectorAll('.slideshow-image');
+    let currentImage = 0;
+
+    setInterval(() => {
+      slideshowImages[currentImage].classList.remove('active');
+      currentImage = (currentImage + 1) % slideshowImages.length;
+      slideshowImages[currentImage].classList.add('active');
+    }, 3000);
+  </script>
+</body>
+</html>
